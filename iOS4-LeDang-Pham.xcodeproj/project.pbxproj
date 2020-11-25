@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44B73732256EA22900C2803F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B73731256EA22900C2803F /* AppDelegate.swift */; };
+		44B73734256EA22900C2803F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B73733256EA22900C2803F /* SceneDelegate.swift */; };
+		44B73736256EA22900C2803F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B73735256EA22900C2803F /* ViewController.swift */; };
+		44B73739256EA22900C2803F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B73737256EA22900C2803F /* Main.storyboard */; };
+		44B7373B256EA22C00C2803F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B7373A256EA22C00C2803F /* Assets.xcassets */; };
+		44B7373E256EA22C00C2803F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44B7373C256EA22C00C2803F /* LaunchScreen.storyboard */; };
+		44B73749256EA22D00C2803F /* iOS4_LeDang_PhamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B73748256EA22D00C2803F /* iOS4_LeDang_PhamTests.swift */; };
+		44B73754256EA22D00C2803F /* iOS4_LeDang_PhamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B73753256EA22D00C2803F /* iOS4_LeDang_PhamUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44B73745256EA22D00C2803F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44B73726256EA22900C2803F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44B7372D256EA22900C2803F;
+			remoteInfo = "iOS4-LeDang-Pham";
+		};
+		44B73750256EA22D00C2803F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44B73726256EA22900C2803F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44B7372D256EA22900C2803F;
+			remoteInfo = "iOS4-LeDang-Pham";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44B7372E256EA22900C2803F /* iOS4-LeDang-Pham.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS4-LeDang-Pham.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B73731256EA22900C2803F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44B73733256EA22900C2803F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44B73735256EA22900C2803F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44B73738256EA22900C2803F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44B7373A256EA22C00C2803F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44B7373D256EA22C00C2803F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44B7373F256EA22C00C2803F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B73744256EA22D00C2803F /* iOS4-LeDang-PhamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS4-LeDang-PhamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B73748256EA22D00C2803F /* iOS4_LeDang_PhamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS4_LeDang_PhamTests.swift; sourceTree = "<group>"; };
+		44B7374A256EA22D00C2803F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44B7374F256EA22D00C2803F /* iOS4-LeDang-PhamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS4-LeDang-PhamUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44B73753256EA22D00C2803F /* iOS4_LeDang_PhamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS4_LeDang_PhamUITests.swift; sourceTree = "<group>"; };
+		44B73755256EA22D00C2803F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44B7372B256EA22900C2803F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B73741256EA22D00C2803F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B7374C256EA22D00C2803F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44B73725256EA22900C2803F = {
+			isa = PBXGroup;
+			children = (
+				44B73730256EA22900C2803F /* iOS4-LeDang-Pham */,
+				44B73747256EA22D00C2803F /* iOS4-LeDang-PhamTests */,
+				44B73752256EA22D00C2803F /* iOS4-LeDang-PhamUITests */,
+				44B7372F256EA22900C2803F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44B7372F256EA22900C2803F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44B7372E256EA22900C2803F /* iOS4-LeDang-Pham.app */,
+				44B73744256EA22D00C2803F /* iOS4-LeDang-PhamTests.xctest */,
+				44B7374F256EA22D00C2803F /* iOS4-LeDang-PhamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44B73730256EA22900C2803F /* iOS4-LeDang-Pham */ = {
+			isa = PBXGroup;
+			children = (
+				44B73731256EA22900C2803F /* AppDelegate.swift */,
+				44B73733256EA22900C2803F /* SceneDelegate.swift */,
+				44B73735256EA22900C2803F /* ViewController.swift */,
+				44B73737256EA22900C2803F /* Main.storyboard */,
+				44B7373A256EA22C00C2803F /* Assets.xcassets */,
+				44B7373C256EA22C00C2803F /* LaunchScreen.storyboard */,
+				44B7373F256EA22C00C2803F /* Info.plist */,
+			);
+			path = "iOS4-LeDang-Pham";
+			sourceTree = "<group>";
+		};
+		44B73747256EA22D00C2803F /* iOS4-LeDang-PhamTests */ = {
+			isa = PBXGroup;
+			children = (
+				44B73748256EA22D00C2803F /* iOS4_LeDang_PhamTests.swift */,
+				44B7374A256EA22D00C2803F /* Info.plist */,
+			);
+			path = "iOS4-LeDang-PhamTests";
+			sourceTree = "<group>";
+		};
+		44B73752256EA22D00C2803F /* iOS4-LeDang-PhamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44B73753256EA22D00C2803F /* iOS4_LeDang_PhamUITests.swift */,
+				44B73755256EA22D00C2803F /* Info.plist */,
+			);
+			path = "iOS4-LeDang-PhamUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44B7372D256EA22900C2803F /* iOS4-LeDang-Pham */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B73758256EA22D00C2803F /* Build configuration list for PBXNativeTarget "iOS4-LeDang-Pham" */;
+			buildPhases = (
+				44B7372A256EA22900C2803F /* Sources */,
+				44B7372B256EA22900C2803F /* Frameworks */,
+				44B7372C256EA22900C2803F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS4-LeDang-Pham";
+			productName = "iOS4-LeDang-Pham";
+			productReference = 44B7372E256EA22900C2803F /* iOS4-LeDang-Pham.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44B73743256EA22D00C2803F /* iOS4-LeDang-PhamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B7375B256EA22D00C2803F /* Build configuration list for PBXNativeTarget "iOS4-LeDang-PhamTests" */;
+			buildPhases = (
+				44B73740256EA22D00C2803F /* Sources */,
+				44B73741256EA22D00C2803F /* Frameworks */,
+				44B73742256EA22D00C2803F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44B73746256EA22D00C2803F /* PBXTargetDependency */,
+			);
+			name = "iOS4-LeDang-PhamTests";
+			productName = "iOS4-LeDang-PhamTests";
+			productReference = 44B73744256EA22D00C2803F /* iOS4-LeDang-PhamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44B7374E256EA22D00C2803F /* iOS4-LeDang-PhamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B7375E256EA22D00C2803F /* Build configuration list for PBXNativeTarget "iOS4-LeDang-PhamUITests" */;
+			buildPhases = (
+				44B7374B256EA22D00C2803F /* Sources */,
+				44B7374C256EA22D00C2803F /* Frameworks */,
+				44B7374D256EA22D00C2803F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44B73751256EA22D00C2803F /* PBXTargetDependency */,
+			);
+			name = "iOS4-LeDang-PhamUITests";
+			productName = "iOS4-LeDang-PhamUITests";
+			productReference = 44B7374F256EA22D00C2803F /* iOS4-LeDang-PhamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44B73726256EA22900C2803F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					44B7372D256EA22900C2803F = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					44B73743256EA22D00C2803F = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 44B7372D256EA22900C2803F;
+					};
+					44B7374E256EA22D00C2803F = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 44B7372D256EA22900C2803F;
+					};
+				};
+			};
+			buildConfigurationList = 44B73729256EA22900C2803F /* Build configuration list for PBXProject "iOS4-LeDang-Pham" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44B73725256EA22900C2803F;
+			productRefGroup = 44B7372F256EA22900C2803F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44B7372D256EA22900C2803F /* iOS4-LeDang-Pham */,
+				44B73743256EA22D00C2803F /* iOS4-LeDang-PhamTests */,
+				44B7374E256EA22D00C2803F /* iOS4-LeDang-PhamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44B7372C256EA22900C2803F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B7373E256EA22C00C2803F /* LaunchScreen.storyboard in Resources */,
+				44B7373B256EA22C00C2803F /* Assets.xcassets in Resources */,
+				44B73739256EA22900C2803F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B73742256EA22D00C2803F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B7374D256EA22D00C2803F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44B7372A256EA22900C2803F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B73736256EA22900C2803F /* ViewController.swift in Sources */,
+				44B73732256EA22900C2803F /* AppDelegate.swift in Sources */,
+				44B73734256EA22900C2803F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B73740256EA22D00C2803F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B73749256EA22D00C2803F /* iOS4_LeDang_PhamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44B7374B256EA22D00C2803F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B73754256EA22D00C2803F /* iOS4_LeDang_PhamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44B73746256EA22D00C2803F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44B7372D256EA22900C2803F /* iOS4-LeDang-Pham */;
+			targetProxy = 44B73745256EA22D00C2803F /* PBXContainerItemProxy */;
+		};
+		44B73751256EA22D00C2803F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44B7372D256EA22900C2803F /* iOS4-LeDang-Pham */;
+			targetProxy = 44B73750256EA22D00C2803F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44B73737256EA22900C2803F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44B73738256EA22900C2803F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44B7373C256EA22C00C2803F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44B7373D256EA22C00C2803F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44B73756256EA22D00C2803F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44B73757256EA22D00C2803F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44B73759256EA22D00C2803F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGYXTL3NHU;
+				INFOPLIST_FILE = "iOS4-LeDang-Pham/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kim.iOS4-LeDang-Pham";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44B7375A256EA22D00C2803F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGYXTL3NHU;
+				INFOPLIST_FILE = "iOS4-LeDang-Pham/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kim.iOS4-LeDang-Pham";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44B7375C256EA22D00C2803F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGYXTL3NHU;
+				INFOPLIST_FILE = "iOS4-LeDang-PhamTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kim.iOS4-LeDang-PhamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS4-LeDang-Pham.app/iOS4-LeDang-Pham";
+			};
+			name = Debug;
+		};
+		44B7375D256EA22D00C2803F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGYXTL3NHU;
+				INFOPLIST_FILE = "iOS4-LeDang-PhamTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kim.iOS4-LeDang-PhamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS4-LeDang-Pham.app/iOS4-LeDang-Pham";
+			};
+			name = Release;
+		};
+		44B7375F256EA22D00C2803F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGYXTL3NHU;
+				INFOPLIST_FILE = "iOS4-LeDang-PhamUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kim.iOS4-LeDang-PhamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS4-LeDang-Pham";
+			};
+			name = Debug;
+		};
+		44B73760256EA22D00C2803F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GGYXTL3NHU;
+				INFOPLIST_FILE = "iOS4-LeDang-PhamUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.kim.iOS4-LeDang-PhamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS4-LeDang-Pham";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44B73729256EA22900C2803F /* Build configuration list for PBXProject "iOS4-LeDang-Pham" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B73756256EA22D00C2803F /* Debug */,
+				44B73757256EA22D00C2803F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B73758256EA22D00C2803F /* Build configuration list for PBXNativeTarget "iOS4-LeDang-Pham" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B73759256EA22D00C2803F /* Debug */,
+				44B7375A256EA22D00C2803F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B7375B256EA22D00C2803F /* Build configuration list for PBXNativeTarget "iOS4-LeDang-PhamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B7375C256EA22D00C2803F /* Debug */,
+				44B7375D256EA22D00C2803F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B7375E256EA22D00C2803F /* Build configuration list for PBXNativeTarget "iOS4-LeDang-PhamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44B7375F256EA22D00C2803F /* Debug */,
+				44B73760256EA22D00C2803F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44B73726256EA22900C2803F /* Project object */;
+}
