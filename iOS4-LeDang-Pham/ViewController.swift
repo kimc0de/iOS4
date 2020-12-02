@@ -20,6 +20,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func getOnlineRate(_ sender: Any) {
+    }
+    
+    @IBAction func dolarRate(_ sender: Any) {
+    }
+    
+    @IBAction func poundRate(_ sender: Any) {
+    }
+    
+    @IBAction func getEuroValue(_ sender: Any) {
+    }
+    @IBAction func getDolarValue(_ sender: Any) {
+    }
+    
+    @IBAction func getPoundValue(_ sender: Any) {
+    }
+    
 }
 
