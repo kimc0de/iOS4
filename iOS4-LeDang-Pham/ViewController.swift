@@ -8,11 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var euro = 1.00
+    var dollar = 1.1808
+    var pound = 0.89183
+    var euroToDollarRate = 1.1808
+    var euroToPoundRate = 0.89183
 
-    @IBOutlet weak var euro_dolar_Rate: UITextField!
-    @IBOutlet weak var euro_pound_Rate: UITextField!
+    @IBOutlet weak var euroDollarRate: UITextField!
+    @IBOutlet weak var euroPoundRate: UITextField!
     @IBOutlet weak var euroValue: UITextField!
-    @IBOutlet weak var dolarValue: UITextField!
+    @IBOutlet weak var dollarValue: UITextField!
     @IBOutlet weak var poundValue: UITextField!
     
     override func viewDidLoad() {
@@ -23,19 +29,40 @@ class ViewController: UIViewController {
     @IBAction func getOnlineRate(_ sender: Any) {
     }
     
-    @IBAction func dolarRate(_ sender: Any) {
+    @IBAction func dollarRateChanged(_ sender: Any) {
+        euroToDollarRate = Double(euroDollarRate.text ?? "") ?? 0.0
+        dollar = euro * euroToDollarRate
+        dollarValue.text = String(format: "%f", dollar)
     }
     
-    @IBAction func poundRate(_ sender: Any) {
+    @IBAction func poundRateChanged(_ sender: Any) {
+        euroToPoundRate = Double(euroPoundRate.text ?? "") ?? 0.0
+        pound = euro * euroToPoundRate
+        poundValue.text = String(format: "%f", pound)
     }
     
-    @IBAction func getEuroValue(_ sender: Any) {
-    }
-    @IBAction func getDolarValue(_ sender: Any) {
+    @IBAction func euroValueChanged(_ sender: Any) {
+        euro = Double(euroValue.text ?? "") ?? 0.0
+        dollar = euro * euroToDollarRate
+        pound = euro * euroToPoundRate
+        dollarValue.text = String(format: "%f", dollar)
+        poundValue.text = String(format: "%f", pound)
     }
     
-    @IBAction func getPoundValue(_ sender: Any) {
+    @IBAction func dollarValueChanged(_ sender: Any) {
+        dollar = Double(dollarValue.text ?? "") ?? 0.0
+        euro = dollar / euroToDollarRate
+        pound = euro * euroToPoundRate
+        euroValue.text = String(format: "%f", euro)
+        poundValue.text = String(format: "%f", pound)
     }
     
+    @IBAction func poundValueChanged(_ sender: Any) {
+        pound = Double(poundValue.text ?? "") ?? 0.0
+        euro = pound / euroToPoundRate
+        dollar = euro * euroToDollarRate
+        euroValue.text = String(format: "%f", euro)
+        dollarValue.text = String(format: "%f", dollar)
+    }
 }
 
