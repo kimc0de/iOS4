@@ -9,9 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var euro = 1.00
-    var dollar = 1.1808
-    var pound = 0.89183
+    var euro = 0.0
+    var dollar = 0.0
+    var pound = 0.0
     var euroToDollarRate = 1.1808
     var euroToPoundRate = 0.89183
 
@@ -45,28 +45,32 @@ class ViewController: UIViewController {
         euro = Double(euroValue.text ?? "") ?? 0.0
         dollar = euro * euroToDollarRate
         pound = euro * euroToPoundRate
-        dollarValue.text = doubleToString(doubleValue: dollar)
-        poundValue.text = doubleToString(doubleValue: pound)
+        dollarValue.text = doubleToStringWith2DecimalPlaces(doubleValue: dollar)
+        poundValue.text = doubleToStringWith2DecimalPlaces(doubleValue: pound)
     }
     
     @IBAction func dollarValueChanged(_ sender: Any) {
         dollar = Double(dollarValue.text ?? "") ?? 0.0
         euro = dollar / euroToDollarRate
         pound = euro * euroToPoundRate
-        euroValue.text = doubleToString(doubleValue: euro)
-        poundValue.text = doubleToString(doubleValue: pound)
+        euroValue.text = doubleToStringWith2DecimalPlaces(doubleValue: euro)
+        poundValue.text = doubleToStringWith2DecimalPlaces(doubleValue: pound)
     }
     
     @IBAction func poundValueChanged(_ sender: Any) {
         pound = Double(poundValue.text ?? "") ?? 0.0
         euro = pound / euroToPoundRate
         dollar = euro * euroToDollarRate
-        euroValue.text = doubleToString(doubleValue: euro)
-        dollarValue.text = doubleToString(doubleValue: dollar)
+        euroValue.text = doubleToStringWith2DecimalPlaces(doubleValue: euro)
+        dollarValue.text = doubleToStringWith2DecimalPlaces(doubleValue: dollar)
+    }
+    
+    func doubleToStringWith2DecimalPlaces(doubleValue: Double) -> String {
+        return String(format: "%.2lf", doubleValue)
     }
     
     func doubleToString(doubleValue: Double) -> String {
-        return String(format: "%.2lf", doubleValue)
+        return String(format: "%f", doubleValue)
     }
 }
 
