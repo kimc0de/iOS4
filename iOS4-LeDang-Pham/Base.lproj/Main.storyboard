@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,6 +38,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="dollarRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="PY0-B2-dmO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="cq8-v2-PJR"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="STn-oA-qog" userLabel="EuroValue">
@@ -47,6 +48,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="euroValueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="8qA-gu-PRb"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="QPw-hn-DH3"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="n8A-PA-rlb" userLabel="EuroToPoundRate">
@@ -56,6 +58,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="poundRateChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Ylr-2k-6zz"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hcO-3K-Sra"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zey-Lm-8Ke" userLabel="DollarValue">
@@ -65,6 +68,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="dollarValueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="2cY-T5-6sf"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0Y6-4p-lDG"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vkT-Ql-4v0" userLabel="PoundValue">
@@ -74,6 +78,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="poundValueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Usm-Wx-8gv"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wN5-Uk-sXH"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4G-fi-oFA">
