@@ -127,9 +127,8 @@ class ViewController: UIViewController , UITextFieldDelegate{
         euro = Double(euroValue.text ?? "") ?? defaultEuro
         dollar = euro * euroToDollarRate
         pound = euro * euroToPoundRate
-
-        dollarValue.text = doubleToString(doubleValue: dollar)
-        poundValue.text = doubleToString(doubleValue: pound)
+        
+        updateDisplay()
     }
     
     // $ text field changes -> update € and £ text fields
@@ -138,8 +137,7 @@ class ViewController: UIViewController , UITextFieldDelegate{
         euro = dollar / euroToDollarRate
         pound = euro * euroToPoundRate
 
-        euroValue.text = doubleToString(doubleValue: euro)
-        poundValue.text = doubleToString(doubleValue: pound)
+        updateDisplay()
     }
     // £ text field changes -> update € and $ text fields
     @IBAction func poundValueChanged(_ sender: Any) {
@@ -147,10 +145,13 @@ class ViewController: UIViewController , UITextFieldDelegate{
         euro = pound / euroToPoundRate
         dollar = euro * euroToDollarRate
 
+        updateDisplay()
+    }
+    func updateDisplay(){
         euroValue.text = doubleToString(doubleValue: euro)
         dollarValue.text = doubleToString(doubleValue: dollar)
+        poundValue.text = doubleToString(doubleValue: pound)
     }
-    
     // Text field return by clicking enter
     // Keyboard disappear after return
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
